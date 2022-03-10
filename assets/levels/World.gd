@@ -5,6 +5,7 @@ const chunk_amount = 16
 var noise
 var city_noise
 var tree_noise
+var mountain_noise
 var chunks = {}
 var unready_chunks = {}
 var thread
@@ -24,6 +25,11 @@ func _ready():
 	tree_noise.seed = randi()
 	tree_noise.octaves = 6
 	tree_noise.period = 180
+	randomize()
+	mountain_noise = OpenSimplexNoise.new()
+	mountain_noise.seed = randi()
+	mountain_noise.octaves = 6
+	mountain_noise.period = 360
 	thread = Thread.new()
 
 	
@@ -38,7 +44,7 @@ func load_chunk(arr):
 	var thread = arr[0]
 	var x = arr[1]
 	var z = arr[2]
-	var chunk = Chunk.new(noise, tree_noise, city_noise, x*chunk_size, z*chunk_size, chunk_size)
+	var chunk = Chunk.new(noise, tree_noise, city_noise, mountain_noise, x*chunk_size, z*chunk_size, chunk_size)
 	chunk.translation = Vector3(x*chunk_size, 0, z*chunk_size)
 	call_deferred("load_done", chunk, thread)
 func load_done(chunk,thread):

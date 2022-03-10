@@ -4,15 +4,18 @@ var mesh_instance
 var noise
 var city_noise
 var tree_noise
+var mountain_noise
 var x
 var z
 var chunk_size
 var should_remove = true
 var tree = load("res://assets/objects/Spruce.tscn")
-func _init(noise, tree_noise, city_noise, x, z, chunk_size):
+var small_hive_building = load("res://assets/objects/SmallAntHive.tscn")
+func _init(noise, tree_noise, city_noise, mountain_noise, x, z, chunk_size):
 	self.noise = noise
 	self.city_noise = city_noise
 	self.tree_noise = tree_noise
+	self.mountain_noise = mountain_noise
 	self.x = x
 	self.z = z
 	self.chunk_size = chunk_size
@@ -33,6 +36,8 @@ func generate_chunk():
 	for i in range(data_tool.get_vertex_count()):
 		var vertex = data_tool.get_vertex(i)
 		vertex.y = noise.get_noise_3d(vertex.x + x, vertex.y, vertex.z + z) * 80
+		var ny = mountain_noise.get_noise_3d(vertex.x + x, vertex.y, vertex.z + z) * 270
+		vertex.y += ny
 		data_tool.set_vertex(i, vertex)
 	for s in range(array_plane.get_surface_count()):
 		array_plane.surface_remove(s)
@@ -47,15 +52,25 @@ func generate_chunk():
 	add_child(mesh_instance)
 	for i in range(data_tool.get_vertex_count()):
 		var vertex = data_tool.get_vertex(i)
-		vertex.y = noise.get_noise_3d(vertex.x + x, vertex.y, vertex.z + z) * 80
+		var ny = tree_noise.get_noise_3d(vertex.x + x, vertex.y, vertex.z + z) * 80
 		randomize()
 		var rand = rand_range(0,512)
-		if vertex.y > 15:
+		if ny > 8 and vertex.y > 0:
 			if rand > 1 and rand < 2:
 				var scene_instance = tree.instance()
 				scene_instance.set_name("Tree")
 				scene_instance.translation.x = vertex.x
 				scene_instance.translation.y = vertex.y
+				scene_instance.translation.z = vertex.z
+				add_child(scene_instance)
+		var rand2 = rand_range(0,1024)
+		ny = city_noise.get_noise_3d(vertex.x + x, vertex.y, vertex.z + z) * 80
+		if ny > 15 and vertex.y > 0:
+			if rand2 > 1 and rand2 < 2:
+				var scene_instance = small_hive_building.instance()
+				scene_instance.set_name("SmallHive")
+				scene_instance.translation.x = vertex.x
+				scene_instance.translation.y = vertex.y + 7
 				scene_instance.translation.z = vertex.z
 				add_child(scene_instance)
 func generate_water():
