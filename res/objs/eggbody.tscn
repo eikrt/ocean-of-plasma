@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/objs/egg.tres" type="ArrayMesh" id=1]
+[ext_resource path="res://resources/materials/eggmaterial.tres" type="Material" id=2]
+
+
+[node name="EggBody" type="MeshInstance"]
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )
+

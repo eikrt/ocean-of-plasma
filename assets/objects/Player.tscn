@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/levels/Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/scripts/Player.gd" type="Script" id=1]
 
 [sub_resource type="ProceduralSky" id=4]
 sky_top_color = Color( 0.301961, 0.388235, 0.380392, 1 )
@@ -19,13 +19,15 @@ fog_color = Color( 0.47451, 0.498039, 0.517647, 1 )
 [sub_resource type="BoxShape" id=3]
 
 [node name="Player" type="KinematicBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.695998, 1.65843, 0.0946217 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.696, 3, 0.095 )
+collision_layer = 5
+collision_mask = 5
 script = ExtResource( 1 )
 
 [node name="Rotation_Helper" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="Rotation_Helper"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31576, 0.180098 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.18 )
 environment = SubResource( 2 )
 fov = 120.0
 far = 500.0
@@ -33,3 +35,20 @@ far = 500.0
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 3 )
 
+[node name="Raycast1" type="RayCast" parent="."]
+enabled = true
+cast_to = Vector3( 0, 0, -3 )
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="Raycast2" type="RayCast" parent="."]
+enabled = true
+cast_to = Vector3( 0, -3, -3 )
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="Raycast3" type="RayCast" parent="."]
+enabled = true
+cast_to = Vector3( 0, -3, 0 )
+collide_with_areas = true
+collide_with_bodies = false

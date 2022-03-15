@@ -1,0 +1,100 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere"
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 35,
+            "max" : [
+                1.76478910446167,
+                1.4258350133895874,
+                2.840961456298828
+            ],
+            "min" : [
+                -1.678663969039917,
+                -0.08658506721258163,
+                -1.1580324172973633
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 35,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 35,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 120,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 420,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 420,
+            "byteOffset" : 420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 280,
+            "byteOffset" : 840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 240,
+            "byteOffset" : 1120
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1360,
+            "uri" : "data:application/octet-stream;base64,8v8ZvcOBtj/wrxa/R8GSvoEmDz+AG02//xMkvufP3j1oOpS/cm5SPrsCTz8IraI9NHUXP4404z7pB52+ft15P6Ae2bt6gQ6/ws/JPrsCTz+d7wg/HJxXP8r7Xz+WZ4M+nOThP7fGc72Fl6Q/tz8zP3R0gT/Ha+w/7sZsPzIgyD7epAdAnZenP7fGc73SqxhABLxWPov3WT+nCvc/BLxWPi4e+T4yeB5ABLxWPrfGc71Q0jVA/BX9vVMnhD/D/go//BX9vVMnhD/D/go//BX9vVMnhD/D/go//BX9vVMnhD/D/go//BX9vVMnhD/D/go//BX9vVMnhD/D/go//BX9vVMnhD/D/go//BX9vVMnhD/D/go/ujwUv7mBZz+7mH8/fPJ9vwQZ8z7RJghAdJFGv4NTsb36uRRAQOtNv/qGgj/NSss+QOtNv/qGgj/NSss+PCqov0UZCj/A/go/PCqov0UZCj/A/go/dt7Wv6Ae2bvA/go/dt7Wv6Ae2bvA/go/+3P8vsOBtj9Ux8y+SDyAv3+lJz9QnOO+epGcv6Ae2bt4gQ6/XvmuPpzJTT/yPfm+jAHGPALtAD+6EV2/1AFqPTdJGz+W/Uq/IBcQP5TNST/9gX6+KPkTPz1LHj8RTQi/QucgPymdFD8JfwS/kYHIPsw/Zj+NuUa+FjkLP5dfSz8VYYq+XUMuP3YNOz+owVM9Qv2gPs+/Zz8kOZI+8t34PnlzPD/iIfE+CuEEP3GtOD/Vreo+j1HHvcmZZD/C+eA+UAEoOlVlKj9+Cz8/3AHuOwtFBT+1j1o/ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+ciE5PvIfeT8k2RE+LsmWvtuxbT/PiWc+Q7shvylHFD8I3QM/MNMXv1FZqD54Izw/9YX6vrenWz8/sR8+9YX6vrenWz8/sR8+rN1VvxgnDD+JoUQ9rN1VvxgnDD+JoUQ941Nxv1Qtqj7SAek841Nxv1Qtqj7SAek8g23BvsTJYT8gNZC+YO8vv/u1/T4Q9we/aXc0v8AJ4D4e4Q6/AABAPwAAAD4AAEA/AACAPgAAQD8AAMA+AAAgPwAAAD4AACA/AACAPgAAID8AAMA+/v//PgAAAD7+//8+AACAPv///z4AAMA+/v+/PgAAAD7//78+AACAPv//vz4AAMA+/v9/PgAAAD7+/38+AACAPv7/fz4AAMA+BACAPQAAAAAAAEA+AAAAAP7/nz4AAAAA/f/fPgAAAAD+/w8/AAAAAAAAMD8AAAAAAABQPwAAAAAAAHA/AAAAAAIAAD4AAAA+/P//PQAAgD78//89AADAPgAAAAAAAAA+AACAPwAAAD4AAAAAAACAPgAAgD8AAIA+AAAAAAAAwD4AAIA/AADAPgAAYD8AAAA+AABgP/z/fz4AAGA/AADAPgIAAQAEAAIABAAFAAAAFAADAAEAAAADAAEAAwAEAAUABAAHAAUABwAIAAMAEwAGAAQAAwAGAAQABgAHAAcABgAJAAcACQAKAAgABwAKAAgACgALAAYAEgAJAAoACQAMAAoADAANAAsACgANAAsADQAOAAkAEQAMAA4ADQAYAA4AGAAZAAwAEAAXAA0ADAAXAA0AFwAYABcADwAaABgAFwAaABgAGgAcABkAGAAcABkAHAAeAB0AGwAgAB0AIAAhAB8AHQAhAB8AIQAiABsAFgAgACIAIQABACIAAQACACAAFQAAACEAIAAAACEAAAABAA=="
+        }
+    ]
+}

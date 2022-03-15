@@ -1,0 +1,111 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere",
+            "rotation" : [
+                -0.7220112085342407,
+                0.02325761877000332,
+                0.005721434950828552,
+                -0.6914666891098022
+            ],
+            "scale" : [
+                1,
+                1.5975992679595947,
+                1.0190496444702148
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 34,
+            "max" : [
+                0.8659943342208862,
+                1.8329132795333862,
+                0.5015374422073364
+            ],
+            "min" : [
+                -0.8668828010559082,
+                -1.8329135179519653,
+                -1.0015932321548462
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 34,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 34,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 126,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 408,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 408,
+            "byteOffset" : 408
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 272,
+            "byteOffset" : 816
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 252,
+            "byteOffset" : 1088
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1340,
+            "uri" : "data:application/octet-stream;base64,zczzPG7k2T/GQt++a5y9POL/pz9VpT+/ZhxVPIsPOT8jfHK/x+NoOl1avjw1NIC/Mzc6vLgRLr+IS2e/kVGzvBTLo787+Cq/0zruvKqd1787O6m+u724Ptm22D8t7Q0+t4YiP6PSpT8IXaA+VPBPP2ZfMz+IWeE+zrFdP74qVbqqAwA/B7NJP9vBM7+/uvc+R/8WP1H4pb88t8k+Qp2aPj3L2L9E/Hk+nW8CPeec6j967Gm9nW8CPeec6j967Gm9nW8CPeec6j967Gm90smavtqn1z/PgQ4+0smavtqn1z/PgQ4+dSgXv+jdoz9c5qA+dSgXv+jdoz9c5qA+0uhJv+9CLj/zDOI+0uhJv+9CLj/zDOI+COxdv/Cxt7zCZAA/COxdv/Cxt7zCZAA/ISZQv1HeOL8qbvg+ISZQv1HeOL8qbvg+5a8ivwrtp7+QQMo+5a8ivwrtp7+QQMo+TOq4vjra2b/nkHo+TOq4vjra2b/nkHo+sm8Cvemc6r+27Gk9sm8Cvemc6r+27Gk9sm8Cvemc6r+27Gk9eAG8O37tPj9Vhyq/LgGXO8dh4z7LW2W/HAEOO4ORQT73YXu/AAEAucTB4bwA5n+/MAEYu+dRc77xqXi/JAGSu+OJ8b7Dt2G/VgGru313Pr9WCSu/K30VP31/Pj9MFaY+jUlGP9VJ6j6/id8+silZP7WpWj7wDfg+u7FdP8AB4DkA/v8+sAdYP7TpWb74Kfw+iPdDP9Ql6r7Puec+JZESP32XPr9gya8+MgGZuwD8fz8qARU8MgGZuwD8fz8qARU8MgGZuwD8fz8qARU8KsUUv32BPj9Rnag+KsUUv32BPj9Rnag+iBVEv+N18T6/rd8+iBVEv+N18T6/rd8+r61Xv+bxcj7vmfc+r61Xv+bxcj7vmfc+u6Ndv7wB3jwA1v8+u6Ndv7wB3jwA1v8+s2VZv4TxQb75Wfw+s2VZv4TxQb75Wfw+jANGv8dx477Pcec+jANGv8dx477Pcec+JvsSv37fPr9aLa0+JvsSv37fPr9aLa0+NgGbOwD8f78pgRS8NgGbOwD8f78pgRS8NgGbOwD8f78pgRS8q6oqPwAAAD6rqio/AACAPquqKj8AAMA+q6oqPwAAAD+rqio/AAAgP6uqKj8AAEA/q6oqP///Xz+qqqo+BAAAPqqqqj4AAIA+q6qqPgAAwD6rqqo+AAAAP6uqqj4AACA/qqqqPgAAQD+qqqo+//9fP6qqKj4AAAAA/v//PgAAAABYVVU/AAAAAAAAADMEAAA+AACAPwQAAD4AAAAzBACAPgAAgD8EAIA+AAAAMwIAwD4AAIA/AgDAPgAAAAABAAA///9/PwEAAD8AAAAAAAAgP///fz8AACA/AAAAMwAAQD8AAIA/AABAPwAAADP//18/AACAP///Xz+sqio+AACAP/z//z4AAIA/V1VVPwAAgD8gAAYADQAFAAQACwAFAAsADAADAAIACQADAAkACgABAAAABwABAAcACAAGAAUADAAGAAwADQAEAAMACgAEAAoACwACAAEACAACAAgACQAAAA8ABwANAAwAGwANABsAHQALAAoAFwALABcAGQAJAAgAEwAJABMAFQAHAA4AEQAfAA0AHQAMAAsAGQAMABkAGwAKAAkAFQAKABUAFwAIAAcAEQAIABEAEwAaABgAAwAaAAMABAAWABQAAQAWAAEAAgASABAAAAAhAB4ABgAcABoABAAcAAQABQAYABYAAgAYAAIAAwAUABIAAAAUAAAAAQAeABwABQAeAAUABgA="
+        }
+    ]
+}
